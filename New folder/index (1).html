@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emotional Support Potato</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <h1>Emotional Support Potato</h1>
+    </div>
+    <p class="subtitle">Licensed in no states. Certified by no boards. Here for you anyway.</p>
+  </header>
+
+  <main>
+    <section class="potato-stage">
+      <div class="potato" id="potato">
+        <div class="potato-body">
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="mouth" id="mouth"></div>
+          <div class="blush left"></div>
+          <div class="blush right"></div>
+        </div>
+        <div class="sprout" id="sprout"></div>
+      </div>
+
+      <div class="mood-panel">
+        <span class="mood-label">Potato's mood right now</span>
+        <div class="mood-track">
+          <div class="mood-fill" id="moodFill"></div>
+        </div>
+        <span class="mood-word" id="moodWord">content</span>
+      </div>
+    </section>
+
+    <section class="response-area" id="responseArea" aria-live="polite"></section>
+
+    <section class="input-row">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Tell the potato what's wrong..."
+        maxlength="140"
+        autocomplete="off"
+      />
+      <button id="sendBtn">Tell potato</button>
+    </section>
+
+    <section class="footer-row">
+      <span class="session-counter">Sessions today: <strong id="sessionCount">0</strong></span>
+      <button id="resetBtn" class="ghost-btn">End session</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
