@@ -5,7 +5,7 @@ A small potato-shaped therapist. Tell it what's wrong. It will not understand, b
 Built for GCSRM Recruitment 2026 — Technical Track (Web Development), Option A: Build a Web Toy.
 
 ## Live Demo
-_(Add your Netlify / Vercel / GitHub Pages link here after deploying)_
+https://emotional-support-potato.netlify.app
 
 ## What it does
 
@@ -15,20 +15,13 @@ _(Add your Netlify / Vercel / GitHub Pages link here after deploying)_
 
 ## Tech stack
 
-- HTML — structure
-- CSS — potato character, mood meter, layout, animations
-- JavaScript (vanilla, no libraries) — response logic, mood shifting, session tracking via localStorage
+- HTML — the structure of the page
+- CSS — styling and animations
+- JavaScript — makes the potato respond, change mood, and remember sessions
 
-## How to run locally
+## How to run
 
-1. Clone this repo
-2. Open `index.html` directly in a browser — no build step, no dependencies
-
-```bash
-git clone <your-repo-url>
-cd emotional-support-potato
-open index.html   # or double-click the file
-```
+Just open `index.html` in a browser. No installation needed.
 
 ## Project structure
 
@@ -44,8 +37,5 @@ open index.html   # or double-click the file
 1. **Submit a message** — potato animates ("listens"), then reveals a random therapy-speak response after a short delay
 2. **Mood meter shifts** — after every message, the potato's mood bar and expression change randomly, independent of the input
 3. **End session** — resets the conversation and increments a persistent session counter shown on screen
-
-### Bonus features included
-- Randomized, expressive potato face (eyes, blush, changing mouth expression)
 - Persistent session counter via `localStorage`
 - Enter-key support for sending messages
